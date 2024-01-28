@@ -1,0 +1,23 @@
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── app
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-39.pyc
+│   │   │   ├── settings.cpython-39.pyc
+│   │   │   ├── urls.cpython-39.pyc
+│   │   │   └── wsgi.cpython-39.pyc
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   └── manage.py
+├── docker-compose.yml
+├── requirements.dev.txt
+├── requirements.txt
+└── tree.txt
+
+3 directories, 17 files
