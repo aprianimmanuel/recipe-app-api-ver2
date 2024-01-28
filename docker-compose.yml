@@ -1,14 +1,13 @@
-version: "3.9" #optional
+version: "3.9"
 
-services:  # Services names are used as DNS Hostnames
+services:
   app:
     build:
       context: .
       args:
         - DEV=true
     ports:
-      - "8000:8000" #port di host:port di container
+      - "8000:8000"
     volumes:
-      - .:/app  #mounting current directory ke /app
-    command: >
-      sh -c "python manage.py runserver 0.0.0.0:8000"
+      - ./app:/app  # Mount only the 'app' directory
+    command: ["sh", "-c", "python manage.py runserver 0.0.0.0:8000"]
